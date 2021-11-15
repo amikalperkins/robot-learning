@@ -8,9 +8,9 @@
 
 /home/amikalperkins/git_workspace/robot-learning/catkin_ws/src/my_pkg/src/hello_world_node.cpp
 ros/ros.h
--
+/home/amikalperkins/git_workspace/robot-learning/catkin_ws/src/my_pkg/src/ros/ros.h
 std_msgs/String.h
--
+/home/amikalperkins/git_workspace/robot-learning/catkin_ws/src/my_pkg/src/std_msgs/String.h
 sstream
 -
 

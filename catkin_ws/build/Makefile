@@ -285,19 +285,6 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named _node
-
-# Build rule for target.
-_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _node
-.PHONY : _node
-
-# fast build rule for target.
-_node/fast:
-	$(MAKE) -f my_pkg/CMakeFiles/_node.dir/build.make my_pkg/CMakeFiles/_node.dir/build
-.PHONY : _node/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -387,6 +374,19 @@ roscpp_generate_messages_py: cmake_check_build_system
 roscpp_generate_messages_py/fast:
 	$(MAKE) -f my_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named hello_world_node
+
+# Build rule for target.
+hello_world_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_world_node
+.PHONY : hello_world_node
+
+# fast build rule for target.
+hello_world_node/fast:
+	$(MAKE) -f my_pkg/CMakeFiles/hello_world_node.dir/build.make my_pkg/CMakeFiles/hello_world_node.dir/build
+.PHONY : hello_world_node/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
@@ -514,7 +514,6 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... _node"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -522,6 +521,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... hello_world_node"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"

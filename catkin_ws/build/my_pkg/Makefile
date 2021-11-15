@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-my_pkg/CMakeFiles/_node.dir/rule:
-	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_pkg/CMakeFiles/_node.dir/rule
-.PHONY : my_pkg/CMakeFiles/_node.dir/rule
-
-# Convenience name for target.
-_node: my_pkg/CMakeFiles/_node.dir/rule
-
-.PHONY : _node
-
-# fast build rule for target.
-_node/fast:
-	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/_node.dir/build.make my_pkg/CMakeFiles/_node.dir/build
-.PHONY : _node/fast
-
-# Convenience name for target.
 my_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : my_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -286,6 +271,21 @@ roscpp_generate_messages_py: my_pkg/CMakeFiles/roscpp_generate_messages_py.dir/r
 roscpp_generate_messages_py/fast:
 	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+my_pkg/CMakeFiles/hello_world_node.dir/rule:
+	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_pkg/CMakeFiles/hello_world_node.dir/rule
+.PHONY : my_pkg/CMakeFiles/hello_world_node.dir/rule
+
+# Convenience name for target.
+hello_world_node: my_pkg/CMakeFiles/hello_world_node.dir/rule
+
+.PHONY : hello_world_node
+
+# fast build rule for target.
+hello_world_node/fast:
+	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/hello_world_node.dir/build.make my_pkg/CMakeFiles/hello_world_node.dir/build
+.PHONY : hello_world_node/fast
 
 # Convenience name for target.
 my_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
@@ -413,7 +413,7 @@ src/hello_world_node.o: src/hello_world_node.cpp.o
 
 # target to build an object file
 src/hello_world_node.cpp.o:
-	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/_node.dir/build.make my_pkg/CMakeFiles/_node.dir/src/hello_world_node.cpp.o
+	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/hello_world_node.dir/build.make my_pkg/CMakeFiles/hello_world_node.dir/src/hello_world_node.cpp.o
 .PHONY : src/hello_world_node.cpp.o
 
 src/hello_world_node.i: src/hello_world_node.cpp.i
@@ -422,7 +422,7 @@ src/hello_world_node.i: src/hello_world_node.cpp.i
 
 # target to preprocess a source file
 src/hello_world_node.cpp.i:
-	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/_node.dir/build.make my_pkg/CMakeFiles/_node.dir/src/hello_world_node.cpp.i
+	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/hello_world_node.dir/build.make my_pkg/CMakeFiles/hello_world_node.dir/src/hello_world_node.cpp.i
 .PHONY : src/hello_world_node.cpp.i
 
 src/hello_world_node.s: src/hello_world_node.cpp.s
@@ -431,7 +431,7 @@ src/hello_world_node.s: src/hello_world_node.cpp.s
 
 # target to generate assembly for a file
 src/hello_world_node.cpp.s:
-	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/_node.dir/build.make my_pkg/CMakeFiles/_node.dir/src/hello_world_node.cpp.s
+	cd /home/amikalperkins/git_workspace/robot-learning/catkin_ws/build && $(MAKE) -f my_pkg/CMakeFiles/hello_world_node.dir/build.make my_pkg/CMakeFiles/hello_world_node.dir/src/hello_world_node.cpp.s
 .PHONY : src/hello_world_node.cpp.s
 
 # Help Target
@@ -444,7 +444,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... _node"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -454,6 +453,7 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... install"
+	@echo "... hello_world_node"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
